@@ -29,3 +29,7 @@ autocmd FileType python set textwidth=79
 
 " run Flake8 on python files on save
 autocmd BufWritePost *.py call Flake8()
+
+" solarized theme
+set background=dark
+colorscheme solarized
