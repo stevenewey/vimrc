@@ -45,3 +45,6 @@ noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 " powerline
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
+
+" backspace like normal
+set backspace=2
