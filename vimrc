@@ -48,3 +48,13 @@ set laststatus=2
 
 " backspace like normal
 set backspace=2
+
+" disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
