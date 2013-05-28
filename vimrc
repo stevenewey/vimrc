@@ -58,3 +58,6 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
+" map w!! to sudo saving
+cmap w!! %!sudo tee > /dev/null %
