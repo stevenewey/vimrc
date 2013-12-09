@@ -1,8 +1,10 @@
 " enable pathogen
 call pathogen#infect()
 
+set encoding=utf-8
+
 " enable syntax highlighting
-syntax on
+syntax enable
 
 " enable language plugin auto-indenting
 filetype indent plugin on
@@ -32,7 +34,7 @@ autocmd BufWritePost *.py call Flake8()
 
 " solarized theme
 set background=dark
-let g:solarized_termtrans = 1
+"let g:solarized_termtrans = 1
 colorscheme solarized
 
 " yank text to OSX clipboard
@@ -43,8 +45,11 @@ noremap <leader>yy "*Y
 noremap <leader>p :set paste<CR>:put  *<CR>:set nopaste<CR>
 
 " powerline
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 set laststatus=2
+
+" airline
+let g:airline_powerline_fonts = 1
 
 " backspace like normal
 set backspace=2
