@@ -32,6 +32,11 @@ autocmd FileType python set textwidth=79
 " run Flake8 on python files on save
 autocmd BufWritePost *.py call Flake8()
 
+" 2 character indent for html/javascript
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 textwidth=0
+autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 textwidth=0
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 textwidth=0
+
 " solarized theme
 set background=dark
 "let g:solarized_termtrans = 1
