@@ -27,7 +27,7 @@ set nocompatible
 set autoindent
 
 " 79 char width for python
-autocmd FileType python set textwidth=79
+autocmd FileType python set textwidth=119
 
 " run Flake8 on python files on save
 autocmd BufWritePost *.py call Flake8()
